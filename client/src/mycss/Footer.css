@@ -1,0 +1,39 @@
+.footerbox {
+  position: relative;
+  padding: 20px;
+  border: none;
+  /* margin: 20px auto; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  text-align: center;
+  color: white; /* Adjust text color for better visibility */
+}
+
+.footer-logo img {
+  width: 80px; /* Adjust logo size */
+  margin-bottom: 10px; /* Add space below the logo */
+}
+
+.footer-linkedin,
+.footer-github {
+  margin-top: 10px; /* Add space between social links and content */
+}
+
+.footer-linkedin a,
+.footer-github a {
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: bold;
+  margin: 0 10px; /* Add space between social links */
+}

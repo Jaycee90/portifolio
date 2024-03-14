@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  background-color: black;
+  /* background-image: linear-gradient( #372910, #0d0d0d); */
+  overflow-x: hidden;
+  color: #eee;
+}
+

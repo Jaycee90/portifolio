@@ -1,0 +1,74 @@
+.navbar {
+  position: fixed; /* Set navbar position to fixed */
+  top: 0; /* Position navbar at the top of the viewport */
+  width: 100%; /* Make the navbar span the full width of the viewport */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly along the main axis */
+  align-items: center; /* Center items along the cross axis */
+  padding: 20px;
+  background-color: transparent; 
+}
+
+.navbar .hamburger-button {
+background-color: transparent;
+color: #fff;
+font-size: 50px;
+cursor: pointer;
+border: none;
+}
+
+.navbar .nav-links.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-image: black;
+  width: 500px; /* Adjust the width */
+  height: calc(100vh - 60px); /* Set height of the screen minus header height */
+  padding: 20px;
+  border-radius: 0 0 5px 5px; /* Add rounded corners to the bottom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-links a {
+color: #fff; /* Change link color to white */
+font-size: 80px; /* Increase font size */
+text-decoration: none;
+padding: 15px 0; /* Adjust vertical padding */
+}
+
+.navbar .nav-links a:hover {
+color: #228B22; 
+font-weight: bold;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 768px) {
+.navbar .hamburger-button {
+    display: block; /* Show the hamburger button for small screens */
+}
+
+.navbar .nav-links {
+    display: none; /* Hide the nav links by default on small screens */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-links.open {
+    display: flex; /* Show the nav links when menu is open */
+}
+
+.navbar .nav-links a {
+    font-size: 20px; /* Reduce font size for smaller screens */
+    padding: 10px 0; /* Adjust vertical padding */
+}
+}

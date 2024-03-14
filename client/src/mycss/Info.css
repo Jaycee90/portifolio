@@ -1,0 +1,61 @@
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: solid;
+    margin-top: 120px;
+}
+
+  
+.albums h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.image-wrapper img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border radius for images */
+  }
+  
+.album-list button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gold;
+    color: rgb(215, 30, 30);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.album-list button:hover {
+    background-color: #0056b3;
+}
+  
+.image-navigation button{
+    background-color: whitesmoke;
+}
+
+.image-navigation button:hover{
+    background-color: gold;
+}
+
+
+.image-wrapper img {
+    max-width: 100%; /* Set the maximum width to fit the container */
+    height: auto; /* Maintain the aspect ratio */
+    width: 100%; /* Ensure the image takes up the full width of its container */
+}
+  

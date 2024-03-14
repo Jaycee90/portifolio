@@ -1,0 +1,156 @@
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 400px;
+}
+
+.info-box,
+.projects-box,
+.contact-box {
+  border-radius: 10px;
+  width: 100%;
+  height: auto; /* Allow height to adjust based on content */
+  margin-bottom: 20px; /* Add margin between boxes */
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.info-box:hover{
+  background-color:  #2F4F4F;
+} 
+
+.contact-box:hover{
+  background-color:  #2F4F4F;
+}
+
+.projects-box:hover{
+  background-color: #2F4F4F;
+}
+
+.mern-para img{
+  height: 250px;
+  width: 100%;
+}
+
+.projects-carousel img {
+  width: 100%;
+  height: 100%; /* Make the image fill its container */
+  object-fit: cover; /* Ensure the image covers the container */
+  border-radius: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.view-projects {
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.view-projects a {
+  position: relative;
+  text-decoration: none;
+}
+
+.view-projects a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -3px;
+  left: 0;
+  background-color: goldenrod;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.view-projects a:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.info-box a {
+  position: relative;
+  text-decoration: none;
+}
+
+.info-box a:after {
+  content: "";
+  position: absolute;
+  width:20%;
+  height: 4px;
+  bottom: -3px;
+  left: 0;
+  background-color: goldenrod;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.info-box a:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+.contact-box p {
+  margin-top: 20px;
+}
+
+.arrow-icon {
+  font-size: 50px; /* Adjust the size as needed */
+  color: whitesmoke;
+}
+
+.arrow-icon:hover {
+  color: rgb(108, 222, 108);
+}
+
+.info-box img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+  .middle-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .info-box,
+  .projects-box,
+  .contact-box {
+    width: auto;
+    flex: 1;
+  }
+
+  .info-box,
+  .projects-box,
+  .contact-box {
+    height: 400px;
+  }
+
+  .projects-box {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .info-box p,
+  .projects-box p,
+  .contact-box p {
+    flex-wrap: wrap;
+  }
+}

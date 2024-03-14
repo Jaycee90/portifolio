@@ -1,0 +1,79 @@
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align projects on smaller screens */
+    padding: 20px; /* Add padding to the container */
+}
+
+.project-card {
+    width: calc(50% - 20px); /* Set width of each project card */
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: center;
+    text-align: center;
+}
+
+.project-card h3 {
+    font-weight: bold; /* Make project title bold */
+    margin-bottom: 10px; /* Add space below the title */
+    color: whitesmoke;
+}
+
+.project-card img {
+    width: 100%; /* Make image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add space below the image */
+    border-radius: 40px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 10px; /* Add some margin on top */
+}
+
+.project-links a {
+    color: black; /* Set color of project links */
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+}
+
+.project-links a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -3px;
+    left: 0;
+    background-color: goldenrod;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.project-links a:hover:after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.project-card:hover{
+    border-radius: 40px;
+    background-color: #2F4F4F;
+}
+
+.projects-heading {
+    text-align: center; /* Center align the text */
+    font-size: 32px; /* Adjust font size for smaller screens */
+    margin-top: 20px; /* Reduce top margin for smaller screens */
+    color: whitesmoke;
+    margin-top: 110px;
+}
+
+
+  

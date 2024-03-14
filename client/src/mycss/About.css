@@ -1,0 +1,89 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 80px;
+  color: whitesmoke;
+  font-size: 20px;
+  /* border: solid; */
+}
+
+.profile-details,
+.profile-picture,
+.profile-social,
+.profile-education,
+.tools-section {
+  width: 100%;
+  max-width: 600px; /* Adjust max-width as needed */
+  margin-bottom: 20px;
+  /* border: solid; */
+}
+
+.profile-social h2,
+.profile-education h2,
+.tools-section h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.profile-education p{
+  color: rgb(230, 221, 221);
+}
+
+.tools-section .tools-list{
+  color: rgb(238, 230, 230);
+}
+
+.profile-social ul{
+  text-align: center;
+}
+
+.profile-social ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #228B22; /* Set link color */
+  font-weight: bold; /* Set font weight */
+}
+
+.profile-social ul li a:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+.profile-container h1{
+  margin-top: 20px;
+}
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-social li {
+  margin-bottom: 10px;
+}
+
+.profile-social a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .profile-container {
+    padding: 10px;
+  }
+
+  .profile-details,
+  .profile-picture,
+  .profile-social,
+  .profile-education {
+    width: 100%;
+    max-width: none; /* Remove max-width */
+  }
+}
