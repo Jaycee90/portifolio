@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors(
   {
     Origin: ["https://jayceturambe.vercel.app"],
-    methods: ["POST", "PUT"],
+    methods: ["POST"],
     credentials: true
   }
 ));
