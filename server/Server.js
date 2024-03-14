@@ -11,9 +11,22 @@ const cors = require('cors');
 
 app.use(cors({
   origin: ["https://jayceturambe.vercel.app"],
-  methods: ["POST", "GET", "OPTIONS"],
+  methods: ["POST"],
   credentials: true // If you're sending cookies with the request
 }));
+
+// Enable CORS for the server
+app.use(function(req, res, next) {
+  // CORS headers
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,PATCH,DELETE,OPTIONS');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Content-Type, Authorization, Content-Length, X-Requested-With'
+  );
+  if (req.method === 'OPTIONS') res.sendStatus(200); // Preflight request handling
+  else next();
+});
 
 
 // Create a SMTP transporter
