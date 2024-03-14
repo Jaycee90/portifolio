@@ -88,10 +88,12 @@
 }
 
 .box:hover{
+  border-radius: 20px;
   background-color: #2F4F4F;
 }
 
 .first-box:hover{
+  border-radius: 20px;
   background-color: #2F4F4F;
 }
 
