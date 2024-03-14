@@ -9,25 +9,13 @@ app.use(bodyParser.json());
 //Use cors to allow external messsages
 const cors = require('cors');
 
-app.use(cors({
-  origin: ["https://jayceturambe.vercel.app"],
-  methods: ["POST"],
-  credentials: true // If you're sending cookies with the request
-}));
-
-// Enable CORS for the server
-app.use(function(req, res, next) {
-  // CORS headers
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,PATCH,DELETE,OPTIONS');
-  res.header(
-    'Access-Control-Allow-Headers',
-    'Content-Type, Authorization, Content-Length, X-Requested-With'
-  );
-  if (req.method === 'OPTIONS') res.sendStatus(200); // Preflight request handling
-  else next();
+// Middleware to enable CORS
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://jayceturambe.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  next();
 });
-
 
 // Create a SMTP transporter
 const transporter = nodemailer.createTransport({
