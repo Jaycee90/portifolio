@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'https://jayceturambe.vercel.app',
-  methods: ['POST'],
+  origin: ["https://jayceturambe.vercel.app"],
+  methods: ["POST", "GET", "OPTIONS"],
   credentials: true // If you're sending cookies with the request
 }));
 
