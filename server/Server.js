@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const nodemailer = require('nodemailer');
 
 const app = express();
@@ -8,12 +7,12 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 //Use cors to allow external messsages
+const cors = require('cors');
+
 app.use(cors({
-  origin: "https://jayceturambe.vercel.app", // Allow requests only from this origin
-  methods: ["POST"], // Allow only POST requests
-  credentials: true, // Allow sending cookies along with the request
-  allowedHeaders: ["Content-Type"], // Specify allowed headers
-  exposedHeaders: ["Content-Length"], // Specify headers that can be exposed to the browser
+  origin: 'https://jayceturambe.vercel.app',
+  methods: ['POST'],
+  credentials: true // If you're sending cookies with the request
 }));
 
 
