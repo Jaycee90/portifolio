@@ -8,13 +8,14 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 //Use cors to allow external messsages
-app.use(cors(
-  {
-    Origin: ["https://jayceturambe.vercel.app"],
-    methods: ["POST"],
-    credentials: true
-  }
-));
+app.use(cors({
+  origin: "https://jayceturambe.vercel.app", // Allow requests only from this origin
+  methods: ["POST"], // Allow only POST requests
+  credentials: true, // Allow sending cookies along with the request
+  allowedHeaders: ["Content-Type"], // Specify allowed headers
+  exposedHeaders: ["Content-Length"], // Specify headers that can be exposed to the browser
+}));
+
 
 // Create a SMTP transporter
 const transporter = nodemailer.createTransport({
