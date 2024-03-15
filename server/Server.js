@@ -1,13 +1,31 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const nodemailer = require('nodemailer');
 
 const app = express();
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+//Use cors to allow external messsages
+const cors = require('cors');
+
+// Middleware to enable CORS
+const app = express();
+// Fix cors issue by only including methods i used in my backend code!
+app.use(cors(
+  {
+    Origin: ["https://jayceturambe.vercel.app/"],
+    methods: ["POST", "PUT"],
+    credentials: true
+  }
+));
+
+// app.use((req, res, next) => {
+//   res.setHeader('Access-Control-Allow-Origin', 'https://jayceturambe.vercel.app');
+//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+//   next();
+// });
 
 // Create a SMTP transporter
 const transporter = nodemailer.createTransport({
