@@ -20,11 +20,11 @@ function Projects() {
                         <span style={{color: 'whitesmoke', fontSize: '15px'}}>LIVE DEMO</span>
                         <FontAwesomeIcon icon={faExternalLinkAlt} color='whitesmoke'/> 
                     </a> 
-                    <a href="https://github.com/Jaycee90/Library-vercel/tree/main/client" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Jaycee90/LibraryManager/tree/main/client" target="_blank" rel="noopener noreferrer">
                         <span style={{color: 'whitesmoke', fontSize: '15px'}}>CLIENT SIDE</span>
                         <FontAwesomeIcon icon={faExternalLinkAlt} color='whitesmoke'/> 
                     </a>
-                    <a href="https://github.com/Jaycee90/Library-vercel/tree/main/server" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Jaycee90/LibraryManager/tree/main/server" target="_blank" rel="noopener noreferrer">
                         <span style={{color: 'whitesmoke', fontSize: '15px'}}>SERVER SIDE</span>
                         <FontAwesomeIcon icon={faExternalLinkAlt} color='whitesmoke'/> 
                     </a>
