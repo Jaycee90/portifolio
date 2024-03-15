@@ -20,7 +20,7 @@ function Contact() {
     e.preventDefault();
     try {
       // Connect to the backend server
-      const response = await axios.post('https://portifolio-neon-eight.vercel.app/submit-form', formData); 
+      const response = await axios.post('https://portifolio-sigma-ebon-98.vercel.app/submit-form', formData); 
       console.log(response.data);
       if (response.data.success) {
         // Form submission successful
