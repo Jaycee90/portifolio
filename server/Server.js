@@ -13,7 +13,7 @@ const cors = require('cors');
 // Fix cors issue by only including methods i used in my backend code!
 app.use(cors(
   {
-    Origin: ["https://jayceturambe.vercel.app/"],
+    Origin: ["https://localhost:4000"],
     methods: ["POST", "PUT"],
     credentials: true
   }
