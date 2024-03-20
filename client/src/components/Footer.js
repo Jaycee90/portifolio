@@ -1,6 +1,6 @@
 
 import React from 'react';
-import logo from '../assets/jay.png'; 
+import mylogo from '../assets/jay.png'; 
 import '../mycss/Footer.css';
 
 function Footer() {
@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footerbox">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src={logo} alt="Logo" width="100"/>
+          <img src={mylogo} alt="Logo" width="100"/>
         </div>
 
         <div className="footer-text">

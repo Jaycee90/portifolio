@@ -12,8 +12,8 @@
         "dest": "/"
       },
       {
-        "src": "/",
-        "dest": "//submit-form"
+        "src": "/submit-form",
+        "dest": "/"
       }
     ]
   }

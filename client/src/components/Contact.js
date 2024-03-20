@@ -19,48 +19,45 @@ function Contact() {
   const handleSubmit = async (e) => {    
     e.preventDefault();
     try {
-      // Connect to the backend server
-      const response = await axios.post('https://portifolio-sigma-ebon-98.vercel.app/submit-form', formData); 
+      const response = await axios.post('http://localhost:4000/submit-form', formData);
       console.log(response.data);
       if (response.data.success) {
-        // Form submission successful
-        alert("Your message is successfully submitted!");
+        alert("Your message was successfully submitted!");
+        setFormData({ name: '', email: '', message: '' }); // Clear form after successful submission
       } else {
-        // Handle failure
         alert("Something went wrong");
       }
     } catch (error) {
       console.error('Error submitting form:', error);
+      alert("Failed to submit the form. Please try again later.");
     }
   };
 
   return (
     <div>
-        
-        <div className="contact-container">
-            <h2><FontAwesomeIcon icon={faEnvelope} /> Contact Me</h2>
-            <form onSubmit={handleSubmit}> {/* Fixed the onSubmit function */}
-                <div className="form-group">
-                    <label>Name:</label>
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} />
-                </div>
+      <div className="contact-container">
+        <h2><FontAwesomeIcon icon={faEnvelope} /> Contact Me</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label>Name:</label>
+            <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+          </div>
 
-                <div className="form-group">
-                    <label>Email:</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} />
-                </div>
+          <div className="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+          </div>
 
-                <div className="form-group">
-                    <label>Message:</label>
-                    <textarea name="message" value={formData.message} onChange={handleChange} />
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-        <Footer />
+          <div className="form-group">
+            <label>Message:</label>
+            <textarea name="message" value={formData.message} onChange={handleChange} required />
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <Footer />
     </div>
   );
 }
 
 export default Contact;
-
