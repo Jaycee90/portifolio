@@ -16,7 +16,7 @@ function Projects() {
                 <h3>READHUB</h3>
                 <img src={project1Image} alt="Project 1" width="400" />
                 <div className="project-links">
-                    <a href="https://jayces-library.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://readhub-murex.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <span style={{color: 'whitesmoke', fontSize: '15px'}}>LIVE DEMO</span>
                         <FontAwesomeIcon icon={faExternalLinkAlt} color='whitesmoke'/> 
                     </a> 
