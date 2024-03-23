@@ -19,7 +19,7 @@ function Contact() {
   const handleSubmit = async (e) => {    
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/submit-form', formData);
+      const response = await axios.post('https://portifolio-api-six.vercel.app/submit-form', formData);
       console.log(response.data);
       if (response.data.success) {
         alert("Your message was successfully submitted!");
