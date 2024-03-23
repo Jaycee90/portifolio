@@ -11,13 +11,50 @@ const cors = require('cors');
 
 // Middleware to enable CORS
 // Fix cors issue by only including methods i used in my backend code!
-app.use(cors(
-  {
-    Access-Control-Allow-Origin: "https://jayceturambe.vercel.app",
-    methods: ["POST", "PUT"],
-    credentials: true
+// app.use(cors(
+//   {
+//     origin: "https://jayceturambe.vercel.app",
+//     methods: ["POST", "PUT"],
+//     credentials: true
+//   }
+// ));
+
+
+// ***************************************************** 
+// *** main http request handler.  All requests will ***
+// *** start here, and get sent to a specific        ***
+// *** handler based on the http method              ***
+// ***************************************************** 
+
+function handle_req (req,res,body) {
+  try {
+    console.log(`handle_req ${req.method} request`);
+
+    // Add CORS headers.  I hate CORS
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,PATCH,DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // I added this to include the necessary headers
+
+    // Handle OPTIONS requests (preflight)
+    if (req.method === 'OPTIONS') {
+      res.writeHead(200);
+      res.end();
+      return;
+    }
+
+    if (req.method === "GET"   ) handle_get(req,res);
+    if (req.method === "POST"  ) handle_post(req,res,body);
+    if (req.method === "PUT"   ) handle_put(req,res,body);
+    if (req.method === "PATCH" ) handle_patch(req,res,body);
+    if (req.method === "DELETE") handle_delete(req,res);
   }
-));
+  catch (error) {
+    res.setHeader('Content-Type', 'text/plain');
+    res.statusCode = 500;   //server error
+    res.write(error);
+  }
+  finally { res.end(); }
+}
 
 // Create a SMTP transporter
 const transporter = nodemailer.createTransport({
