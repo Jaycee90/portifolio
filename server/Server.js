@@ -6,15 +6,14 @@ const app = express();
 
 // Middleware
 app.use(bodyParser.json());
-//Use cors to allow external messsages
-const cors = require('cors');
+
 
 // Middleware to enable CORS
 // Fix cors issue by only including methods i used in my backend code!
 app.use(cors(
   {
-    origin: "https://jayceturambe.vercel.app",
-    methods: ["GET", "POST", "PUT" "PATCH", "DELETE"],
+    Origin: ["https://readhub-murex.vercel.app"],
+    methods: ["POST", "PUT"],
     credentials: true
   }
 ));
