@@ -51,7 +51,7 @@ function Header() {
           </div>
           <div className="resume-download">
             {/* Provide a link to download the PDF */}
-            <a href="https://drive.google.com/file/d/1VUIn9Y3pVeNRVf2VchrlE9Lz1vbT_AHJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1fk_USLsWEh8mdgkENyymib7VmuRU0nn7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <span style={{color: '#228B22', fontWeight: 'bold'}}>VIEW RESUME</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='whitesmoke'/> </a>
           </div>
 
