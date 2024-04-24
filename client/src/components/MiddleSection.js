@@ -3,10 +3,7 @@ import React, { useState, useEffect } from 'react';
 import '../mycss/MiddleSection.css';
 import readhubImage from '../assets/readhub.png';
 import vibetrackImage from '../assets/vibetrack.png';
-import venues from '../assets/venues.png';
-import event from '../assets/event.png';
-import ecommerce from '../assets/ecommerce.png'
-import checkout from '../assets/checkout.png';
+import ecommerce from '../assets/ecom.png'
 import mern2 from '../assets/mern2.jpg';
 import gradImage from '../assets/gradImage.jpg'; // Import the graduation image
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,9 +16,6 @@ function MiddleSection() {
   const projectImages = [
     readhubImage,
     vibetrackImage,
-    venues,
-    event,
-    checkout,
     ecommerce,
   ];
 

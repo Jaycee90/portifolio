@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.39dcdeed.css",
+    "main.js": "/static/js/main.5e6e696c.js",
+    "static/media/readhub.png": "/static/media/readhub.8577a7b3831e554789bc.png",
+    "static/media/vibetrack.png": "/static/media/vibetrack.e1f72b54f252af230fd1.png",
+    "static/media/ecom.png": "/static/media/ecom.bb725f9e9877c5f184b5.png",
+    "static/media/Turambe.jpg": "/static/media/Turambe.d7bd683d66a91772bbfe.jpg",
+    "static/media/turam.jpg": "/static/media/turam.d7bd683d66a91772bbfe.jpg",
+    "static/media/resume.png": "/static/media/resume.5fdef2ed70d467dbcc4a.png",
+    "static/media/gradImage.jpg": "/static/media/gradImage.ff43796af766a87d4338.jpg",
+    "static/media/kigali2.jpg": "/static/media/kigali2.514e3d9afdd48bde65f7.jpg",
+    "static/media/mern2.jpg": "/static/media/mern2.ca2fffa37664e1773e98.jpg",
+    "static/media/kigali3.jpg": "/static/media/kigali3.17d93c7f353b8ae6dfe9.jpg",
+    "static/media/kigali1.jpg": "/static/media/kigali1.27c1ed3902e3bf8c8f5f.jpg",
+    "static/media/kigali4.jpg": "/static/media/kigali4.036ac8396a62b607ad35.jpg",
+    "static/media/Roadmap.webp": "/static/media/Roadmap.67773d879511ffbf523c.webp",
+    "static/media/Express.jpg": "/static/media/Express.602ea52601b053d662cc.jpg",
+    "index.html": "/index.html",
+    "main.39dcdeed.css.map": "/static/css/main.39dcdeed.css.map",
+    "main.5e6e696c.js.map": "/static/js/main.5e6e696c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39dcdeed.css",
+    "static/js/main.5e6e696c.js"
+  ]
+}
