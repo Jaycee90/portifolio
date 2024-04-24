@@ -19,7 +19,7 @@ function Contact() {
   const handleSubmit = async (e) => {    
     e.preventDefault();
     try {
-      const response = await axios.post('http://https://port-api-3.onrender.com//submit-form', formData);
+      const response = await axios.post('https://portifolio-api-nine.vercel.app/submit-form', formData);
       console.log(response.data);
       if (response.data.success) {
         alert("Your message was successfully submitted!");
