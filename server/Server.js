@@ -11,13 +11,13 @@ const cors = require('cors');
 
 // Middleware to enable CORS
 // Fix cors issue by only including methods i used in my backend code!
-app.use(cors(
-  {
-    Origin: ["https://localhost:3000"],
-    methods: ["POST", "PUT"],
+// Middleware to enable CORS
+app.use(cors({
+    origin: "*",
+    methods: ["POST"],
+    allowedHeaders: ["Content-Type"],
     credentials: true
-  }
-));
+  }));
 
 // Create a SMTP transporter
 const transporter = nodemailer.createTransport({
