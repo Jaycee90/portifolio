@@ -11,10 +11,10 @@ function About() {
             <div className="profile-details">
                 
                 <p>
-                    Almost everything we use and interact with today utilizes some form of computer science. 
+                    Almost everything we use and interact with today utilizes some form of technology. 
                     Think about it: What device are you on while reading this story? What framework runs 
                     the website this story is on? How is your device connected to the internet that connects 
-                    you to us?! We're just getting started.<br/><br/> Due to computer science, society has undergone 
+                    you to us?! We're just getting started.<br/><br/> Due to technology, society has undergone 
                     a number of changes. Artificial intelligence, for instance. AI helps doctors detect 
                     diseases. Using self-driving cars reduces the use of fossil fuels and takes your hands off 
                     the wheel. Programs that project the spread of forest fires and the most efficient way to 
