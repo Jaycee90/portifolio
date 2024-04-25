@@ -19,9 +19,12 @@ const ContactForm = () => {
           () => {
             console.log('SUCCESS!');
             alert("Your message was submitted!");
+            // Reset the form after successful submission
+            form.current.reset();
           },
           (error) => {
             console.log('FAILED...', error.text);
+            alert("Your message was not submitted, please try again later");
           },
         );
     };
