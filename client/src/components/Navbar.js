@@ -22,7 +22,7 @@ function Navbar() {
         <Link to="/" onClick={handleMenuClick}>Home</Link>
         <Link to="/projects" onClick={handleMenuClick}>Projects</Link>
         <Link to="/about" onClick={handleMenuClick}>About</Link>
-        <Link to="/contact" onClick={handleMenuClick}>Contact</Link>
+        <Link to="/contactform" onClick={handleMenuClick}>Contact</Link>
       </div>
     </div>
   );

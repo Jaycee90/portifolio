@@ -67,7 +67,7 @@ function MiddleSection() {
           </p>
 
           <div className='contact-link'>
-            <a href="/contact"> <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" /></a>
+            <a href="/contactform"> <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" /></a>
           </div>
         </div>
         
