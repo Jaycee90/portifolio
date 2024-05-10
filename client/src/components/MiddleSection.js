@@ -33,8 +33,9 @@ function MiddleSection() {
     <div className="middle-section">
       <div className="info-box">
         <div className='title'><h2>Graduation Celebration!</h2></div>
-        <p>Counting down the days until graduation! Stay tuned for a celebration to remember.</p>
+        <p>Thank you for joining me on this incredible journey! Stay tuned for what's next as I embark on new adventures and opportunities.</p>
         <div className='grad-carousel'><img src={gradImage} alt="Graduation" width="200" height="200"/></div>
+        <a href="https://www.youtube.com/watch?v=U0qRL7lOQ4I&ab_channel=TexasStateUniversity"target="_blank" rel="noopener noreferrer"> <span style={{color: '#228B22', fontWeight: 'bold'}}>2024 Commencement</span></a>
         <a href="/info"> <span style={{color: '#228B22', fontWeight: 'bold'}}>More Info</span></a>
       </div>
 

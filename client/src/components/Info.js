@@ -4,11 +4,11 @@ import Footer from './Footer';
 
 // Import images for each album
 import graduation1 from '../assets/gradImage.jpg';
-import graduation2 from '../assets/kigali2.jpg';
-import celebration1 from '../assets/kigali3.jpg';
-import celebration2 from '../assets/kigali4.jpg';
-import outgoing1 from '../assets/kigali1.jpg';
-import outgoing2 from '../assets/kigali2.jpg';
+import graduation2 from '../assets/gradJay.JPG';
+import celebration1 from '../assets/gradJay2.JPG';
+import celebration2 from '../assets/home.jpg';
+import outgoing1 from '../assets/JayCeleb.JPG';
+import outgoing2 from '../assets/JayCeleb2.JPG';
 
 function Info() {
   // Define album data
@@ -25,7 +25,6 @@ function Info() {
       name: 'Outgoing Pictures',
       images: [outgoing1, outgoing2],
     },
-    // Add more albums as needed
   ];
 
   const [currentAlbumIndex, setCurrentAlbumIndex] = useState(0);
