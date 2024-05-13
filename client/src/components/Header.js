@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../mycss/Header.css'; 
-import myphoto from '../assets/turam.jpg';
+import myphoto from '../assets/turambepro.jpg';
 import resume from '../assets/resume.png'
 import Roadmap from '../assets/Roadmap.webp'
 import Mongopic from '../assets/Express.jpg'

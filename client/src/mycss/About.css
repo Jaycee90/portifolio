@@ -55,7 +55,7 @@
 .profile-picture img {
   width: 100%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .profile-social ul {

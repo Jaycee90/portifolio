@@ -1,6 +1,7 @@
 import React from 'react'; 
 import Footer from './Footer'; 
-import myportrait from '../assets/Turambe.jpg';
+//import myportrait from '../assets/Turambe.jpg';
+import myportrait from '../assets/turambepro.jpg';
 import '../mycss/About.css'; 
 
 function About() {
