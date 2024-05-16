@@ -50,6 +50,11 @@
   margin-top: 20px;
 }
 
+.projects-carousel {
+  overflow: hidden;
+  transition: transform 0.5s ease; /* Smooth transition effect */
+}
+
 .view-projects {
   margin-top: 30px;
   text-align: center;

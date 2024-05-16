@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../mycss/Header.css'; 
 import myphoto from '../assets/turambepro.jpg';
-import resume from '../assets/resume.png'
+import resume from '../assets/newResume.png'
 import Roadmap from '../assets/Roadmap.webp'
-import Mongopic from '../assets/Express.jpg'
+//import Mongopic from '../assets/Express.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -47,16 +47,20 @@ function Header() {
         <div className='box'>
           <div className="resume-preview">
             {/* Display a preview image of my resume */}
-            <img src={resume} alt="Resume Preview" width="350"/>
+            <img src={resume} alt="Resume Preview" width="450"/>
           </div>
           <div className="resume-download">
+          <p>Dynamic Full-Stack Developer with 2+ years of experience driving innovation and collaboration. <br/>
+            Specializing in microservices architectures, I've led the design and implementation of impactful projects across various environments. <br/>
+            Proficient in AWS services and serverless architectures, I excel in problem-solving and fostering continuous learning. <br/>
+            With a passion for pushing boundaries and a commitment to personal growth, I'm eager to contribute to cutting-edge cloud and software development initiatives.</p>
             {/* Provide a link to download the PDF */}
             <a href="https://drive.google.com/file/d/1fk_USLsWEh8mdgkENyymib7VmuRU0nn7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <span style={{color: '#228B22', fontWeight: 'bold'}}>VIEW RESUME</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='whitesmoke'/> </a>
           </div>
 
           <div className='mern-preview'>
-          <img src={Roadmap} alt="Mern Preview" width="350"/>
+          {/* <img src={Roadmap} alt="Mern Preview" width="350"/> */}
           </div>
         </div>
 
@@ -71,7 +75,8 @@ function Header() {
           </div>
 
           <div className="mongo-preview">
-            <img src={Mongopic} alt="Mongo Preview" width="350"/>
+            {/* <img src={Mongopic} alt="Mongo Preview" width="350"/> */}
+            <img src={Roadmap} alt="Mern Preview" width="350"/> 
           </div>
           
           <div className="profile-link">

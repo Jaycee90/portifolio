@@ -62,8 +62,7 @@ function MiddleSection() {
           </div>
           <p>
             There is no doubt that code is becoming the language of the 21st century. 
-            Get started today on the path toward the digital world, 
-            the right investment for your future!
+            Get started today on the path toward the digital world. <br/>Contact me for more details...
             <br />
           </p>
 
