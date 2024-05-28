@@ -30,7 +30,7 @@
 }
 
 .box.first-box:hover .external-link-wrapper .icon {
-  color: rgb(22, 137, 74); /* Change color of the icon when hovering over the first-box */
+  color: goldenrod; /* Change color of the icon when hovering over the first-box */
 }
 
 .resume-download a {
@@ -49,7 +49,7 @@
   height: 4px;
   bottom: -3px;
   left: 0;
-  background-color: green;
+  background-color: goldenrod;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
@@ -76,7 +76,7 @@
   height: 4px;
   bottom: -3px;
   left: 0;
-  background-color: green;
+  background-color: goldenrod;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;

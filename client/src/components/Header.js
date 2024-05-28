@@ -56,7 +56,7 @@ function Header() {
             With a passion for pushing boundaries and a commitment to personal growth, I'm eager to contribute to cutting-edge cloud and software development initiatives.</p>
             {/* Provide a link to download the PDF */}
             <a href="https://drive.google.com/file/d/1aYGCuto04-b-bRpVO8AowfxvLyh6-Er7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            <span style={{color: '#228B22', fontWeight: 'bold'}}>VIEW RESUME</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='whitesmoke'/> </a>
+            <span style={{color: '#DAA520', fontWeight: 'bold'}}>VIEW RESUME</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='goldenrod'/> </a>
           </div>
 
           <div className='mern-preview'>
@@ -82,7 +82,7 @@ function Header() {
           <div className="profile-link">
             <p>LET'S STAY CONNECTED</p>
             <Link to="/about" onClick={handleMenuClick} className="external-link">
-            <span style={{color: '#228B22', fontWeight: 'bold'}}>PROFILE</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='whitesmoke'/> </Link>
+            <span style={{color: '#DAA520', fontWeight: 'bold'}}>PROFILE</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='goldenrod'/> </Link>
           </div>
 
 
