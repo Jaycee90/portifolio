@@ -9,7 +9,25 @@ function About() {
     <div>
         <div className="profile-container">
             <h1>ABOUT ME</h1>
+            <div className='profile-details'>
+                <p>
+                    <ul>
+                        <li>Recent Full-Stack Developer graduate with a B.S. in Computer Science and 2+ years of hands-on experience in designing and delivering robust web applications. </li>
+                        <li>Proven track record of shipping high-quality products and features at scale.</li>
+                        <li>Skilled at turning business and product ideas into effective engineering solutions.</li>
+                        <li>Thrive in fast-paced environments with a strong desire to continuously grow and master the craft.</li>
+                        <li>Proficient in Java, Python, JavaScript and C++ with practical experience in developing and maintaining software applications.</li>
+                        <li>Strong understanding of programming principles, data structures, algorithms, and object-oriented design.</li>
+                        <li>Skilled in developing and maintaining high quality RESTful APIs.</li>
+                        <li>Natural problem-solver with strong analytical skills </li>
+                        <li>Excellent verbal and written communication skills.</li>
+                        <li>Ability to quickly learn new skills and apply them efficiently.</li>
+                    </ul>
+
+                </p>
+            </div>
             <div className="profile-details">
+                <h1>Why I Chose a Career in Technology?</h1>
                 
                 <p>
                     Almost everything we use and interact with today utilizes some form of technology. 
@@ -56,21 +74,29 @@ function About() {
                     Texas State University – San Marcos, Texas<br />
                     <strong>Minor:</strong> Mathematics<br />
                     <strong>Overall GPA:</strong> 3.89<br />
-                    <strong>Relevant Coursework:</strong> Data Structures, Computer Architecture, Object-Oriented Programming.<br />
-                    <strong>Honors:</strong> Scholastic Excellence Award, Bobcat Select Transfer Scholarship, ACC Foundation Scholarship, Phi Theta Kappa Honor, multiple Dean's List certificates.
+                    <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Computer Architecture, Object-Oriented Programming, Software Engineering, Database.<br />
+                    <strong>Honors:</strong> Scholastic Excellence Award, Bobcat Select Transfer Scholarship, ACC Foundation Scholarship, Phi Theta Kappa Honor, Dean's List certificates.
                 </p>
             </div>
 
             <div className="tools-section">
               <h2>Tools & Technologies</h2>
               <ul className="tools-list">
-                <li><strong>Programming Languages:</strong> C/C++, Java, Python</li>
-                <li><strong>Web Development:</strong> HTML & CSS, JavaScript, Node.js, Express.js, React.js</li>
-                <li><strong>Databases:</strong> MongoDB, MySQL, SQL Server</li>
-                <li><strong>IDEs & Tools:</strong> Visual Studio Code,InteliJ, Eclipse, Chrome, Postman</li>
-                <li><strong>Other Tools:</strong> MongoDB Atlas, Compass, Git, Bitbucket, Jira, Jenkins</li>
+                <li><strong>Programming Languages:</strong>Java, Python, C++</li>
+                <li><strong>Frameworks & Libraries:</strong> Spring Boot, Django, React, Bootstrap, Node.js</li>
+                <li><strong>Web Development:</strong> HTML5 & CSS, JavaScript, Express.js, React.js</li>
+                <li><strong>Databases:</strong> MongoDB, MySQL</li>
+                <li><strong>Development Tools: :</strong> Visual Studio Code, IntelliJ, Eclipse, Postman, Chrome, CI/CD, Git, GitHub, Bitbucket, Junit, Jenkins, Jest, Jira</li>
                 <li><strong>Methodologies:</strong> Agile (Scrum), Sprint Planning, Agile Project Management</li>
               </ul>
+            </div>
+
+            <div className='tools-section'>
+                <h2>Career Goals</h2>
+                <ul>
+                    <li>Passionate about working in high-tech and innovative industries.</li>
+                    <li>Eager to continuously learn and adapt to new technologies and advancements in the field.</li>
+                </ul>
             </div>
 
         </div>

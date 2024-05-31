@@ -19,7 +19,7 @@
 .project-card h3 {
     font-weight: bold; /* Make project title bold */
     margin-bottom: 10px; /* Add space below the title */
-    color: whitesmoke;
+    color: gold;
 }
 
 .project-card img {
@@ -51,7 +51,7 @@
     height: 4px;
     bottom: -3px;
     left: 0;
-    background-color: green;
+    background-color: goldenrod;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -62,7 +62,7 @@
     transform: scaleX(1);
 }
 
-.project-card:hover{
+.project-card:hover {
     border-radius: 40px;
     background-color: #2F4F4F;
 }
@@ -71,9 +71,14 @@
     text-align: center; /* Center align the text */
     font-size: 32px; /* Adjust font size for smaller screens */
     margin-top: 20px; /* Reduce top margin for smaller screens */
-    color: whitesmoke;
+    color: gold;
     margin-top: 110px;
 }
 
-
-  
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .project-card {
+        width: calc(100% - 20px); /* Set width of each project card to full width */
+        margin: 10px 0; /* Adjust margins for better spacing */
+    }
+}
