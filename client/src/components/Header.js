@@ -60,7 +60,6 @@ function Header() {
           </div>
 
           <div className='mern-preview'>
-          {/* <img src={Roadmap} alt="Mern Preview" width="350"/> */}
           </div>
         </div>
 
