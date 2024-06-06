@@ -54,7 +54,7 @@ function Header() {
             Specializing in microservices architectures, I've led the design and implementation of impactful projects across various environments. <br/>
             Proficient in AWS services and serverless architectures, I excel in problem-solving and fostering continuous learning. <br/>
             With a passion for pushing boundaries and a commitment to personal growth, I'm eager to contribute to cutting-edge cloud and software development initiatives.</p>
-            {/* Provide a link to download the PDF */}
+            {/* Provide a link to download the PDF document */}
             <a href="https://drive.google.com/file/d/1uAFS1vQyo69iPmRDNIOr1njERWYmk1q_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <span style={{color: '#DAA520', fontWeight: 'bold'}}>VIEW RESUME</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='goldenrod'/> </a>
           </div>
