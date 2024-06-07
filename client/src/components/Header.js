@@ -55,7 +55,7 @@ function Header() {
             Proficient in AWS services and serverless architectures, I excel in problem-solving and fostering continuous learning. <br/>
             With a passion for pushing boundaries and a commitment to personal growth, I'm eager to contribute to cutting-edge cloud and software development initiatives.</p>
             {/* Provide a link to download the PDF document */}
-            <a href="https://docs.google.com/document/d/12VTYkROspsF8GORwHGfl6wpzv9-xdTNW/edit?usp=sharing&ouid=105428653284122264500&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.google.com/document/d/1jaEEgkgw8WgxC4NGTq9OVagGUH07mK4r/edit?usp=sharing&ouid=105428653284122264500&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
             <span style={{color: '#DAA520', fontWeight: 'bold'}}>VIEW RESUME</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='goldenrod'/> </a>
           </div>
 
