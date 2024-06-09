@@ -1,36 +1,38 @@
+/* General styles */
 .first-box {
-  flex: 1; /* First box takes up equal space */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .first-box img {
-  width: 250px; /* Adjust width as needed */
-  height: 250px; /* Maintain aspect ratio */
-  margin-right: 20px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 20px;
   border-radius: 40px;
 }
 
-.first-box h2,h3{
+.first-box h2, h3 {
   text-align: center;
   font-weight: bold;
 }
 
 .nav-links {
-  display: none; /* Hide the menu content by default */
-  position: absolute; /* Position the menu content relative to its container */
-  top: 100%; /* Position the menu content below the button */
-  right: 0; /* Align the menu content to the right */
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
   background-color: #333;
   color: whitesmoke;
   padding: 10px;
   border-radius: 5px;
-  z-index: 1; /* Ensure the menu content is below the button */
+  z-index: 1;
 }
 
 .box.first-box:hover .external-link-wrapper .icon {
-  color: goldenrod; /* Change color of the icon when hovering over the first-box */
+  color: goldenrod;
 }
 
 .resume-download a {
@@ -87,106 +89,119 @@
   transform: scaleX(1);
 }
 
-.box:hover{
+.box:hover {
   border-radius: 20px;
   background-color: #2F4F4F;
 }
 
-.first-box:hover{
+.first-box:hover {
   border-radius: 20px;
   background-color: #2F4F4F;
 }
 
 .social-icons a {
-  margin: 0 10px; /* Adjust the margin as needed */
+  margin: 0 10px;
 }
 
-.resume-preview img{
+.resume-preview img {
   border-radius: 50px;
 }
 
 .header {
-  /* background-color: #f0f0f0; Set background color */
-  padding: 20px; /* Add padding */
+  padding: 20px;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
-  justify-content: space-around; /* Space items evenly */
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 100px;
 }
 
 .box {
-  flex: 1; /* Each box takes up equal space */
-  margin: 10px; /* Add margin */
-  padding: 20px; /* Add padding */
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
   background-color: transparent;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .text {
-  margin-top: 20px; /* Add margin */
+  margin-top: 20px;
 }
 
 .social-icons {
   display: flex;
-  justify-content: center; /* Center social icons */
+  justify-content: center;
 }
 
 .social-icons a {
-  margin: 0 10px; /* Add margin between social icons */
+  margin: 0 10px;
 }
 
 .resume-preview {
-  width: 100%; /* Set the width to 100% */
-  max-width: 350px; /* Set a maximum width for the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 20px; /* Add space between the images */
-}
-
-.resume-download{
-  margin-top: 20px;
-  text-align: center; /*this is for VIEW RESUME word*/
-}
-
-.mern-preview img{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   margin-top: 20px;
 }
 
-.profile-link p{
+.resume-download {
+  margin-top: 20px;
   text-align: center;
 }
 
-.profile-link{
+.mern-preview img {
+  margin-top: 20px;
+}
+
+.profile-link p {
   text-align: center;
 }
 
-.mongo-preview img{
+.profile-link {
+  text-align: center;
+}
+
+.mongo-preview img {
   margin-top: 10px;
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column; /* Display content in a column on smaller screens */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
   .first-box,
   .box {
-    flex: 1; /* Each box takes up equal space */
-    margin: 10px; /* Add margin */
-    padding: 20px; /* Add padding */
-    background-color: transparent; /* Set background color */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: transparent;
   }
 
   .first-box img {
-    margin-bottom: 20px; /* Add space between image and text */
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
   }
 
-  .resume-preview{
+  .resume-preview {
+    width: 100%;
     max-width: 100%;
+  }
+  
+  .resume-download, .profile-link {
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
   }
 }

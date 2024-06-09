@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-//import { Link } from 'react-router-dom';
 import '../mycss/Header.css'; 
 import myphoto from '../assets/turambepro.jpg';
 import resume from '../assets/newResume.png'
 import Roadmap from '../assets/Roadmap.webp'
-//import Mongopic from '../assets/Express.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -47,7 +45,7 @@ function Header() {
         <div className='box'>
           <div className="resume-preview">
             {/* Display a preview image of my resume */}
-            <img src={resume} alt="Resume Preview" width="450"/>
+            <img src={resume} alt="Resume Preview" width="350"/>
           </div>
           <div className="resume-download">
           <p>Dynamic Full-Stack Developer with 2+ years of experience driving innovation and collaboration. <br/>
@@ -74,15 +72,8 @@ function Header() {
           </div>
 
           <div className="mongo-preview">
-            {/* <img src={Mongopic} alt="Mongo Preview" width="350"/> */}
             <img src={Roadmap} alt="Mern Preview" width="450"/> 
           </div>
-          
-          {/* <div className="profile-link">
-            <p>LET'S STAY CONNECTED</p>
-            <Link to="/about" onClick={handleMenuClick} className="external-link">
-            <span style={{color: '#DAA520', fontWeight: 'bold'}}>PROFILE</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='goldenrod'/> </Link>
-          </div> */}
 
          <div className='profile-link'>
           <p>LET'S STAY CONNECTED</p>
