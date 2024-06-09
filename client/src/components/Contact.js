@@ -5,6 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Footer from './Footer';
 import axios from 'axios';
 
+//Not needed since I am not using the backend
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import '../mycss/Header.css'; 
 import myphoto from '../assets/turambepro.jpg';
 import resume from '../assets/newResume.png'
 import Roadmap from '../assets/Roadmap.webp'
 //import Mongopic from '../assets/Express.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Header() {
@@ -75,17 +75,23 @@ function Header() {
 
           <div className="mongo-preview">
             {/* <img src={Mongopic} alt="Mongo Preview" width="350"/> */}
-            <img src={Roadmap} alt="Mern Preview" width="350"/> 
+            <img src={Roadmap} alt="Mern Preview" width="450"/> 
           </div>
           
-          <div className="profile-link">
+          {/* <div className="profile-link">
             <p>LET'S STAY CONNECTED</p>
             <Link to="/about" onClick={handleMenuClick} className="external-link">
             <span style={{color: '#DAA520', fontWeight: 'bold'}}>PROFILE</span> <FontAwesomeIcon icon={faExternalLinkAlt} color='goldenrod'/> </Link>
-          </div>
+          </div> */}
 
-
-    
+         <div className='profile-link'>
+          <p>LET'S STAY CONNECTED</p>
+          <a href="tel:+15127711378" style={{ textDecoration: 'none' }}>
+            <span style={{ color: '#DAA520', fontWeight: 'bold' }}>Feel free to call me</span>
+            <FontAwesomeIcon icon={faPhoneVolume} color='goldenrod' style={{ marginLeft: '5px' }} />
+          </a>
+         </div>
+          
         </div>
       </div>
     </header>
